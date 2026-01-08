@@ -33,8 +33,8 @@ class MainActivity : AppCompatActivity() {
     external fun inferAllergens(input: String): String
 
     private val allergenKeywordMap = mapOf(
-        "fish" to listOf("fish", "anchovy", "mackerel", "tuna", "salmon", "pollock", "cod"),
-        "soy" to listOf("soy", "soya", "soybean", "soy sauce", "lecithin"),
+        "fish" to listOf("fish", "anchovy", "mackerel", "tuna", "salmon", "pollock","cod"),
+        "soy" to listOf("soy", "soya", "soybeans", "soy sauce", "lecithin"),
         "milk" to listOf("milk", "cheese", "butter", "cream", "yoghurt", "yogurt"),
         "wheat" to listOf("wheat", "flour", "gluten"),
         "egg" to listOf("egg", "albumen"),
@@ -156,6 +156,7 @@ class MainActivity : AppCompatActivity() {
                             val intent = Intent(this@MainActivity, FoodDetailActivity::class.java)
                             intent.putExtra("name", item.name)
                             intent.putExtra("ingredients", item.ingredients)
+                            intent.putExtra("raw", item.allergensRaw)
                             intent.putExtra("mapped", item.allergensMapped)
                             intent.putExtra("predicted", predictedText)
 

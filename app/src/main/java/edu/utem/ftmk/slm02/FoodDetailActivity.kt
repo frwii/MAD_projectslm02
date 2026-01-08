@@ -15,6 +15,7 @@ class FoodDetailActivity : AppCompatActivity() {
         // ===============================
         val name = intent.getStringExtra("name") ?: "-"
         val ingredients = intent.getStringExtra("ingredients") ?: "-"
+        val raw = intent.getStringExtra("raw") ?: "-"
         val mapped = intent.getStringExtra("mapped") ?: "-"
         val predicted = intent.getStringExtra("predicted") ?: "-"
 
@@ -35,6 +36,7 @@ class FoodDetailActivity : AppCompatActivity() {
         // ===============================
         findViewById<TextView>(R.id.tvFoodName).text = name
         findViewById<TextView>(R.id.tvIngredients).text = ingredients
+        findViewById<TextView>(R.id.tvRawAllergens).text = raw
         findViewById<TextView>(R.id.tvMappedAllergens).text = mapped
         findViewById<TextView>(R.id.tvPredictedAllergens).text = predicted
 

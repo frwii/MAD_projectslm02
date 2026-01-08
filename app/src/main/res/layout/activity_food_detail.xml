@@ -22,7 +22,6 @@
             android:paddingLeft="12dp"
             android:paddingRight="12dp"
             android:text="Food Name"
-            android:textAlignment="textStart"
             android:textColor="#304FFE"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -43,10 +42,33 @@
             android:id="@+id/tvIngredients"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="12dp"
             android:paddingLeft="12dp"
             android:paddingRight="12dp"
             android:text="Ingredients here"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <!-- RAW ALLERGENS (NEW) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Allergens"
+            android:textColor="#807474"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRawAllergens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Raw allergens here"
             android:textColor="#333333"
             android:textSize="14sp" />
 
@@ -95,10 +117,7 @@
             android:textColor="#333333"
             android:textSize="14sp" />
 
-        <!-- ============================= -->
-        <!-- ⚙ INFERENCE METRICS SECTION -->
-        <!-- ============================= -->
-
+        <!-- INFERENCE METRICS -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -114,7 +133,7 @@
             android:id="@+id/tvInferenceMetrics"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#2EFDFCFD"
+            android:background="#2EF8F6FA"
             android:lineSpacingExtra="6dp"
             android:padding="14dp"
             android:text="Inference metrics will appear here"
