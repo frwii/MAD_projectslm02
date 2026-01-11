@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">slm02</string>
+    <string name="app_name">SLM Allergen Benchmarking</string>
+
+    <string-array name="model_names">
+        <item>Llama-3.2-1B-Instruct-Q4_K_M</item>
+        <item>Llama-3.2-3B-Instruct-Q4_K_M</item>
+        <item>Qwen2.5-1.5b-instruct-q4_k_m</item>
+        <item>Qwen2.5-3b-instruct-q4_k_m</item>
+        <item>Phi-3-mini-4k-instruct-q4</item>
+        <item>Phi-3.5-mini-instruct-Q4_K_M</item>
+        <item>Gemma-2B-instruct-Q4_K_M</item>
+    </string-array>
+
+    <string-array name="dataset_names">
+        <item>Set 01</item> <item>Set 02</item> <item>Set 03</item> <item>Set 04</item>
+        <item>Set 05</item> <item>Set 06</item> <item>Set 07</item> <item>Set 08</item>
+        <item>Set 09</item> <item>Set 10</item> <item>Set 11</item> <item>Set 12</item>
+        <item>Set 13</item> <item>Set 14</item> <item>Set 15</item> <item>Set 16</item>
+        <item>Set 17</item> <item>Set 18</item> <item>Set 19</item> <item>Set 20</item>
+    </string-array>
 </resources>
