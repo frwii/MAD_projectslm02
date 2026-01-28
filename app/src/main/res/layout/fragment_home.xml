@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingHorizontal="32dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="36dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- APP TITLE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="16dp"
+            android:paddingRight="12dp"
+            android:text="Allergen Prediction App"
+            android:textAlignment="center"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- DATASET LABEL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingRight="12dp"
+            android:text="Select a dataset (Each set has 10 items):"
+            android:textColor="#837B7B" />
+
+        <!-- DATASET SPINNER -->
+        <Spinner
+            android:id="@+id/spinnerDataset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:entries="@array/dataset_names"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" />
+
+        <!-- MODEL LABEL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingRight="12dp"
+            android:text="Select Language Model"
+            android:textColor="#837B7B" />
+
+        <!-- SELECT MODEL BUTTON -->
+        <Button
+            android:id="@+id/btnSelectModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#6670DE"
+            android:text="Select Model File"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- SELECTED MODEL NAME -->
+        <TextView
+            android:id="@+id/tvSelectedModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="No model selected"
+            android:textColor="#837B7B"
+            android:textSize="14sp" />
+
+
+        <!-- START BUTTON -->
+        <Button
+            android:id="@+id/btnPredict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#6670DE"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Start Benchmarking"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- PROGRESS BAR -->
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:max="100"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:progress="0"
+            android:progressTint="#656FDC"
+            android:visibility="gone" />
+
+        <!-- RESULTS LABEL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Prediction Results:"
+            android:textStyle="bold" />
+
+
+
+        <!-- LOG OUTPUT -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:text="Data loaded:"
+            android:textAlignment="viewStart"
+            android:textColor="#3F51B5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLogs"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:lineSpacingExtra="8dp"
+            android:padding="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Waiting for processing..."
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

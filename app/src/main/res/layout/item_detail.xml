@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ================= HEADER ================= -->
+        <TextView
+            android:id="@+id/modelName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:paddingTop="12dp"
+            android:text="Model Name"
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- ================= ACCURACY PANEL ================= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C83F51B5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/totalCorrect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Correct: 0 / 0"
+                android:textColor="#E6EBE8"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/totalAccuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0%"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- ================= BADGES ================= -->
+        <LinearLayout
+            android:id="@+id/badgeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <!-- ================= STRENGTHS ================= -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STRENGTHS"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#344E41"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvStrengths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#3A5A40"
+            android:paddingTop="4dp" />
+
+        <!-- ================= WEAKNESSES ================= -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEAKNESSES"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#6C584C"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:id="@+id/tvWeaknesses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#6C584C"
+            android:paddingTop="4dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

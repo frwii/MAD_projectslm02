@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/safetyContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- ================= SECTION TITLE ================= -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safety Metrics"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- ================= SCROLLABLE TABLE ================= -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <!-- TABLE WRAPPER -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ================= HEADER ROW ================= -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#EEF1F7"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hallucination"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Over-Prediction"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Abstention"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- ================= DATA ROWS ================= -->
+            <LinearLayout
+                android:id="@+id/safetyRowsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

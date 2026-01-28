@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:paddingBottom="12dp">
+
+    <!-- ================= PROGRESS BAR ================= -->
+    <ProgressBar
+        android:id="@+id/progressBarFood"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <!-- ================= TITLE ================= -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp"
+        android:text="List Of Data"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- ================= SCROLLABLE CONTENT ================= -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/tvFoodLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@android:color/black"
+            android:textIsSelectable="false"
+            android:textSize="13sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="392dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#6670DE"
+        android:text="Export Prediction"
+        android:textAlignment="center"
+        android:textColor="#FDFAFA"
+        android:textSize="14sp" />
+
+</LinearLayout>

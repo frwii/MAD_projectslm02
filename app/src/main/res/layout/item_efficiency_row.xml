@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- MODEL -->
+    <TextView
+        android:id="@+id/model"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+    <!-- LATENCY -->
+    <TextView
+        android:id="@+id/latency"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- TTFT -->
+    <TextView
+        android:id="@+id/ttft"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- ITPS -->
+    <TextView
+        android:id="@+id/itps"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- OTPS -->
+    <TextView
+        android:id="@+id/otps"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- OET -->
+    <TextView
+        android:id="@+id/oet"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- TOTAL TIME -->
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- JAVA HEAP -->
+    <TextView
+        android:id="@+id/javaHeap"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- NATIVE HEAP -->
+    <TextView
+        android:id="@+id/nativeHeap"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- PSS -->
+    <TextView
+        android:id="@+id/pss"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+</LinearLayout>

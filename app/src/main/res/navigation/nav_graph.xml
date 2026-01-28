@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="edu.utem.ftmk.slm02.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- DETAILS TAB → METRICS TABLES -->
+    <fragment
+        android:id="@+id/metricsFragment"
+        android:name="edu.utem.ftmk.slm02.MetricsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_metrics" />
+
+    <!-- COMPARE TAB → MODEL COMPARISON CARDS -->
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="edu.utem.ftmk.slm02.DetailsFragment"
+        android:label="Compare"
+        tools:layout="@layout/fragment_details" />
+
+    <fragment
+        android:id="@+id/foodListFragment"
+        android:name="edu.utem.ftmk.slm02.FoodListFragment"
+        android:label="Food List" />
+
+</navigation>

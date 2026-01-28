@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "157724219782",
+    "project_id": "foodallergenprediction-a3e16",
+    "storage_bucket": "foodallergenprediction-a3e16.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157724219782:android:b3ec3a05ae2b11fc89f407",
+        "android_client_info": {
+          "package_name": "edu.utem.ftmk.slm02"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIo0pc72u6G-FC8XrKge88EdhXsnwFdS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

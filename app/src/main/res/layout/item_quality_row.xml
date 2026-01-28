@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- MODEL -->
+    <TextView
+        android:id="@+id/modelName"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+    <!-- PRECISION (%) -->
+    <TextView
+        android:id="@+id/precision"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- RECALL (%) -->
+    <TextView
+        android:id="@+id/recall"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- MICRO F1 -->
+    <TextView
+        android:id="@+id/f1Micro"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- MACRO F1 (ADDED) -->
+    <TextView
+        android:id="@+id/f1Macro"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- EXACT MATCH (%) -->
+    <TextView
+        android:id="@+id/emr"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- HAMMING LOSS -->
+    <TextView
+        android:id="@+id/hammingLoss"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+    <!-- FNR (%) -->
+    <TextView
+        android:id="@+id/fnr"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp" />
+
+</LinearLayout>

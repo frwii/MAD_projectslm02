@@ -6,4 +6,5 @@ data class FoodItem(
     val ingredients: String,
     val allergensRaw: String,
     val allergensMapped: String
+
 )

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qualityContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- ================= SECTION TITLE ================= -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quality Metrics"
+        android:textColor="#3F51B5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <!-- ================= SCROLLABLE TABLE ================= -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <!-- TABLE WRAPPER -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ================= HEADER ROW ================= -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#EEF1F7"
+                android:padding="8dp">
+
+                <!-- MODEL -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="140dp"
+                    android:text="Model"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <!-- PRECISION -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:gravity="center"
+                    android:text="Precision"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <!-- RECALL -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:gravity="center"
+                    android:text="Recall"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <!-- MICRO F1 -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:gravity="center"
+                    android:text="Micro F1"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <!-- MACRO F1 -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:gravity="center"
+                    android:text="Macro F1"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <!-- EMR -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="110dp"
+                    android:gravity="center"
+                    android:text="EMR"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <!-- HAMMING LOSS -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="120dp"
+                    android:gravity="center"
+                    android:text="Hamming Loss"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+
+                <!-- FNR -->
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:gravity="center"
+                    android:text="FNR"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+
+            <!-- ================= DATA ROWS ================= -->
+            <LinearLayout
+                android:id="@+id/qualityRowsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
