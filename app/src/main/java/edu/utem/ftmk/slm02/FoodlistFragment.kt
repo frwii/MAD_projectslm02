@@ -186,7 +186,7 @@ class FoodListFragment : Fragment(R.layout.fragment_food_list) {
                     raw,
                     mapped,
                     predicted,
-                    if (outcome) "CORRECT" else "WRONG"
+                    if (outcome) "MATCH" else "MISMATCH"
                 )
             )
 
@@ -229,7 +229,7 @@ class FoodListFragment : Fragment(R.layout.fragment_food_list) {
             }, start, logs.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
 
             logs.append("Predicted Allergens : $predicted\n")
-            logs.append("Outcome : ${if (outcome) "✅ CORRECT" else "❌ WRONG"}\n\n")
+            logs.append("Outcome : ${if (outcome) "✅ MATCH" else "❌ MISMATCH"}\n\n")
 
             index++
         }
