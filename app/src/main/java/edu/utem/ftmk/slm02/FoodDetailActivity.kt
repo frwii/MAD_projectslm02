@@ -25,7 +25,7 @@ class FoodDetailActivity : AppCompatActivity() {
         val latencyMs = intent.getLongExtra("latencyMs", -1L)
         val javaHeapKb = intent.getLongExtra("javaHeapKb", -1L)
         val nativeHeapKb = intent.getLongExtra("nativeHeapKb", -1L)
-        val totalPssKb = intent.getLongExtra("totalPssKb", -1L)
+        val totalPssKb = intent.getLongExtra("pssKb", -1L)
         val ttft = intent.getLongExtra("ttft", -1L)
         val itps = intent.getLongExtra("itps", -1L)
         val otps = intent.getLongExtra("otps", -1L)

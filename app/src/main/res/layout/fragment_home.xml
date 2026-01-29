@@ -44,7 +44,7 @@
         <Spinner
             android:id="@+id/spinnerDataset"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="34dp"
             android:layout_marginBottom="18dp"
             android:entries="@array/dataset_names"
             android:paddingLeft="12dp"

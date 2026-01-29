@@ -214,6 +214,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                         i.putExtra("itps", itps)
                         i.putExtra("otps", otps)
                         i.putExtra("oet", oet)
+                        i.putExtra("javaHeapKb", javaHeapKb)
+                        i.putExtra("nativeHeapKb", nativeHeapKb)
+                        i.putExtra("pssKb", totalPssKb)
                         startActivity(i)
                     }
 
